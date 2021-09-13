@@ -1,0 +1,126 @@
+.post {
+  width: 100%;
+  position: relative;
+}
+
+.post__wrapper {
+  padding: 60px 30px 96px;
+}
+
+.post__edit {
+  position: relative;
+  margin-bottom: 68px;
+}
+
+.post__edit-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  font-family: $base-font-bold;
+  text-decoration: underline;
+  letter-spacing: 0.1em;
+}
+
+.post__date {
+  font-size: 20px;
+  font-family: $base-font-family;
+  letter-spacing: 0.2em;
+  margin-bottom: 30px;
+}
+
+.post__title {
+  font-size: 40px; 
+  font-family: $base-jp-font;
+  letter-spacing: 0.1em; 
+  margin-bottom: 36px;
+}
+
+.post__image {
+  background-size: cover;
+  width: 100%;
+  height: 540px;
+  margin-bottom: 30px;
+  background-position: center;
+}
+
+.post__content {
+  font-size: 18px; 
+  font-family: $base-jp-font-reg;
+  letter-spacing: 0.1em; 
+  margin-bottom: 126px;
+  line-height: 2.25;
+}
+
+.post-comment {
+  border-top: 1px solid #000000;
+  padding: 52px 0;
+}
+
+.post-comment__header {
+  font-size: 50px;
+  font-family: $base-font-bold;
+  letter-spacing: 0.1em;
+}
+
+.post-comment__list {
+  padding: 32px 0 51px;
+  list-style: none;
+}
+
+.post-comment__list-item {
+  background-color: $color-bg-tertiary;
+  padding: 54px 40px 49px;
+  margin-bottom: 50px;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.post-comment__content {
+  font-size: 18px; 
+  font-family: $base-jp-font-reg;
+  letter-spacing: 0.1em; 
+  line-height: 2.25;
+  margin-bottom: 12px;
+}
+
+.post-comment__date {
+  font-size: 16px;
+  font-family: $base-font-bold;
+  letter-spacing: 0.1em;
+}
+
+.post-comment__input {
+  border: solid 1px  #000000;
+  width: 100%;
+  height: 200px;
+  padding: 42px 40px;
+  letter-spacing: 0.09em;
+  font-family: $base-font-family;
+  margin-bottom: 32px;
+
+  &::placeholder {
+    font-size: 19px;
+    font-family: $base-font-italic;
+    font-style: italic;
+  }
+}
+
+.post-comment__button-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.post-comment__button {
+  font-family: $base-font-bold;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  background-color: $color-bg-secondary;
+  padding: 20px 24px 20px 20px;
+  color: $color-text-secondary;
+  width: 211px;
+  cursor: pointer;
+}

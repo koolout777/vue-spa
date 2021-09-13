@@ -1,0 +1,124 @@
+.slider {
+  height: 666px;
+  position: relative;
+  width: 100%;
+  min-width: 1180px;
+  overflow: hidden;
+}
+
+.slider__list {
+  height: 100%;
+  display: flex;
+  list-style: none;
+  position: relative;
+  transition: transform .5s linear;
+  z-index: 3;
+}
+
+.slider__list-item {
+  height: 100%;
+}
+
+.slider__image-wrapper {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.slider__nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__nav-left {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  height: 18px;
+  width: 18px;
+  border-left: 5px;
+  border-top: 5px;
+  border-style: solid;
+  border-color: $color-bg-primary;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  z-index: 5;
+}
+
+.slider__nav-right {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  height: 18px;
+  width: 18px;
+  border-right: 5px;
+  border-bottom: 5px;
+  border-style: solid;
+  border-color: $color-bg-primary;  
+  transform: rotate(-45deg);
+  cursor: pointer;
+  z-index: 5;
+}
+
+.slider__wrapper {
+  padding: 112px;
+}
+
+.slider__title {
+  font-size: 60px;
+  font-family: $base-jp-font;
+  color: $color-text-secondary;
+  max-width: 583px;
+  width: min-content;
+  min-width: 383px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider__title-text {
+  display: inline;
+  padding: 5px 0;
+  background-color: $color-text-primary;
+  overflow-wrap: anywhere;
+}
+
+.slider__date {
+  text-align: right;
+  font-size: 28px;
+  font-family: $base-font-family;
+  margin-top: 22px;
+  letter-spacing: 0.2em;
+  margin-right: -5px;
+  text-shadow: 0 0 2px #969696;
+}
+
+.slider__pagination {
+  position: absolute;
+  bottom: 52px;
+  left: calc(50% - 37.5px);
+  display: flex;
+  list-style: none;
+}
+
+.slider__pagination-item {
+  height: 15px;
+  width: 15px;
+  background-color: #707070;
+  border-radius: 100%;
+  margin: 0 5px;
+  cursor: pointer;
+  z-index: 5;
+
+  &.is-active {
+    background-color: $color-bg-secondary;
+  }
+}
